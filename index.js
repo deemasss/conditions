@@ -1,39 +1,35 @@
-const firstNumber = +prompt('Enter fisrt number');
-const operation = prompt('Enter operation + - * /');
-const secondNumber = +prompt('Enter second number');
+const firstNumber = parseInt(prompt('Enter fisrt number'));
+const operator = prompt('Choose operator + - * /');
+const secondNumber = parseInt(prompt('Enter second number'));
 
-if (firstNumber !== NaN && secondNumber !== NaN) {
+if (isNaN(firstNumber) || isNaN(secondNumber)) {
 
-    if (operation === '+') {
+    alert('Your fisrt or second number is incorrect');
 
-        let result = firstNumber + secondNumber;
-        alert(`Your result is ${result}`);
-    
-    } else if (operation === '-') {
-    
-        let result = firstNumber - secondNumber;
-        alert(`Your result is ${result}`);
-    
-    } else if (operation === '*') {
-    
-        let result = firstNumber * secondNumber;
-        alert(`Your result is ${result}`);
-    
-    } else if (operation === '/') {
-    
-        let result = firstNumber / secondNumber;
-        alert(`Your result is ${result}`);
-    
-    } else {
-    
-        alert('This operation is not exist')
-    
-    }
+}
 
+if (operator === '+') {
+
+    let result = firstNumber + secondNumber;
+    alert(`Your result is ${result}`);
+        
+} else if (operator === '-') {
+        
+    let result = firstNumber - secondNumber;
+    alert(`Your result is ${result}`);
+        
+} else if (operator === '*') {
+        
+    let result = firstNumber * secondNumber;
+    alert(`Your result is ${result}`);
+        
+} else if (operator === '/') {
+        
+    let result = firstNumber / secondNumber;
+    alert(`Your result is ${result}`);
+        
 } else {
-
-    alert('NaN');
-
-};
-
-
+        
+    alert('This operation is not exist')
+            
+}
