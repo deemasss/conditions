@@ -6,9 +6,7 @@ if (isNaN(firstNumber) || isNaN(secondNumber)) {
 
     alert('Your fisrt or second number is incorrect');
 
-}
-
-if (operator === '+') {
+} else if (operator === '+') {
 
     let result = firstNumber + secondNumber;
     alert(`Your result is ${result}`);
@@ -33,3 +31,4 @@ if (operator === '+') {
     alert('This operation is not exist')
             
 }
+
